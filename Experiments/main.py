@@ -95,8 +95,6 @@ def get_mimic_data(split:bool):
 
 def get_mushrooms_data(split:bool, instances:int = None):
     if split:
-        # df_train = read_csv('../data/agaricus-lepiota-train.csv', header = None)
-        # df_test = read_csv('../data/agaricus-lepiota-test.csv', header = None)
         df_train = read_csv('../data/agaricus-lepiota-train.csv')
         df_test = read_csv('../data/agaricus-lepiota-test.csv')
         df_train = df_train.astype("str")
